@@ -33,8 +33,6 @@ steps:
       SourceFolder: deployment
       Contents: '*.json'
       TargetFolder: $(build.artifactstagingdirectory)/Templates
+
   - task: PublishBuildArtifacts@1
-    inputs:
-      PathtoPublish: '/home/vsts/work/1/s'
-      ArtifactName: 'drop'
-      PublishLocation: 'Container'
+    displayName: 'Publish Artifact: drop' 
