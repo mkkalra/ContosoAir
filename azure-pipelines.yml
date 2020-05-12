@@ -35,4 +35,7 @@ steps:
       TargetFolder: $(build.artifactstagingdirectory)/Templates
 
   - task: PublishBuildArtifacts@1
-    displayName: 'Publish Artifact: drop' 
+    inputs:
+      PathtoPublish: '/home/vsts/work/1/s'
+      ArtifactName: drop' 
+      publishLocation: 'Container'
