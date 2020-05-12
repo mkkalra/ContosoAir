@@ -36,6 +36,6 @@ steps:
 
   - task: PublishBuildArtifacts@1
     inputs:
-      PathtoPublish: '/home/vsts/work/1/s'
-      ArtifactName: drop' 
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      ArtifactName: 'drop'
       publishLocation: 'Container'
